@@ -6,6 +6,6 @@ function displayInfo() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      console.log(data.name);
     });
 }

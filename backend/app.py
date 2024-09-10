@@ -9,7 +9,7 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/', methods = ['GET', 'POST'])
-@cross_origin
+@cross_origin()
 
 def basic():
     return jsonify({'name':'Soumya'})
